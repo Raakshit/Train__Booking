@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use('/api/seats/',SeatRoutes)
 
-const port = 8800;
+const port = process.env.PORT || 8800;
 app.listen(port , () => 
 console.log(`Server Running Under the port ${port}`)
 );
