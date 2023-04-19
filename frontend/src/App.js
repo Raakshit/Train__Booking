@@ -18,7 +18,7 @@ function App() {
 
   // importing data from backend
   const fetchdata = async () => {
-    const seat = await axios.get("http://localhost:8800/api/seats/");
+    const seat = await axios.get("https://train-booking-pbgt.onrender.com/api/seats/");
     setSeatData(seat.data);
   };
 
