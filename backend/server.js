@@ -11,11 +11,11 @@ dotenv.config();
 connectDb();
 app.use(express.json());
 
-app.get('/' , (req,res) => res.send("Hello"))
+// app.get('/' , (req,res) => res.send("Hello"))
 
 app.use('/api/seats/',SeatRoutes)
 
-const port = 8082;
+const port = 8800;
 app.listen(port , () => 
 console.log(`Server Running Under the port ${port}`)
 );
