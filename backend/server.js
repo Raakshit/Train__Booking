@@ -5,11 +5,7 @@ const SeatRoutes = require('./Routes/seatsRoutes');
 const cors = require('cors');
 
 const app = express();
-app.use(cors(
-    {
-        origin:[process.env.API_URL , 'http://localhost:3000']
-    }
-));
+app.use(cors());
 dotenv.config();
 
 connectDb();
