@@ -15,7 +15,7 @@ app.get('/' , (req,res) => res.send("Hello"))
 
 app.use('/api/seats/',SeatRoutes)
 
-const port = process.env.PORT || 8082;
+const port = 8082;
 app.listen(port , () => 
 console.log(`Server Running Under the port ${port}`)
 );
