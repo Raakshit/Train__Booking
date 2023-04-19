@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Outfit:wght@200;300&display=swap');
+*{
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Jua', sans-serif;
+  font-family: 'Outfit', sans-serif;
+}

@@ -1,0 +1,150 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Jua&family=Outfit:wght@500&display=swap'); */
+
+button {
+  font-size: 18px;
+  font-weight: 300;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: rgb(48, 187, 48);
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;
+}
+
+button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+.seat__loading{
+  width: 100px;
+  height: 100px;
+}
+
+.btn-train{
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.main{
+  display: flex;
+}
+
+.main__left__heading p{
+  font-family: 'Outfit', sans-serif;
+  font-size: 33px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.main__left{
+  margin: 6px;
+  display: flex;
+  flex: 0.4;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lottie_image{
+  width: 500px;
+  position: relative;
+  margin: -60px 0px;
+}
+
+.main__left__middle{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__left__info{
+  padding:10px 0px;
+
+}
+
+.main__right{
+  background-color: white;
+  margin:6px;
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+}
+
+.input-field{
+  font-weight: 400;
+  font-size: 18px;
+  /* font-weight: 600; */
+  width: 250px;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 15px;
+  padding-left: 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px grey;
+}
+
+
+.input__icon{
+  position: relative;
+  font-size: 20px;
+}
+
+.right__header__info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__right__header{
+  margin:10px 230px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 1px 1px #c5bbbb;
+}
+
+.main__right__seatsInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-field-seats{
+  font-weight: 500;
+  width: 320px;
+  height: 40px;
+  border: none;
+  padding: 2px 30px;
+  font-size: 20px;
+  box-shadow: 0px 0px 2px grey;
+  border-radius: 10px;
+}
+
+.seats_arrange{
+  display: grid;
+  /* grid-template-columns: repeat(7,1fr); */
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 80px;
+  grid-row-gap: 10px;
+  /* padding: 15px; */
+  box-shadow: 0px 1px 1px grey;
+  border-radius: 15px;
+}
+.seat__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.seat_icon{
+  font-size: 25px;
+  color: rgb(48, 187, 48);
+}
