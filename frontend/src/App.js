@@ -13,14 +13,12 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  // const BASE_URI = process.env.REACT_APP_API_PROXY || 'http://localhost:8800';
-
   const [seatData, setSeatData] = useState(null);
   const [seatQuantity, setSeatQuantity] = useState("");
 
   // importing data from backend
   const fetchdata = async () => {
-    const seat = await axios.get("https://train-booking-pbgt.onrender.com/api/seats/");
+    const seat = await axios.get("http://localhost:8800/api/seats/");
     setSeatData(seat.data);
   };
 
@@ -35,12 +33,12 @@ function App() {
     if (assurence) {
       try {
         const seatNumber = await axios.put(
-          `${BASE_URI}/api/seats/bookseat`,
+          "http://localhost:8800/api/seats/bookseat",
           { quantity: seatQuantity }
         );
         const numbers = seatNumber.data.booking_seats;
         console.log(numbers.toString());
-        toast.info(`Your seats With NUmber ${numbers.toString()} are Bokked`, {
+        toast.info(`Seats Number ${numbers.toString()} are Booked`, {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
