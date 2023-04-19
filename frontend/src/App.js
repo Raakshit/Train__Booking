@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BASE_URL } from "./helper";
 
 function App() {
   const [seatData, setSeatData] = useState(null);
@@ -18,7 +19,7 @@ function App() {
 
   // importing data from backend
   const fetchdata = async () => {
-    const seat = await axios.get("http://localhost:8800/api/seats/");
+    const seat = await axios.get(`${BASE_URL}/api/seats/`);
     setSeatData(seat.data);
   };
 
@@ -33,7 +34,7 @@ function App() {
     if (assurence) {
       try {
         const seatNumber = await axios.put(
-          "http://localhost:8800/api/seats/bookseat",
+          `${BASE_URL}/api/seats/bookseat`,
           { quantity: seatQuantity }
         );
         const numbers = seatNumber.data.booking_seats;
