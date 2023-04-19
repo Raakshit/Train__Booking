@@ -18,7 +18,7 @@ function App() {
 
   // importing data from backend
   const fetchdata = async () => {
-    const seat = await axios.get("http://localhost:8082/api/seats/");
+    const seat = await axios.get("http://localhost:8800/api/seats/");
     setSeatData(seat.data);
   };
 
@@ -33,7 +33,7 @@ function App() {
     if (assurence) {
       try {
         const seatNumber = await axios.put(
-          "http://localhost:8082/api/seats/bookseat",
+          "http://localhost:8800/api/seats/bookseat",
           { quantity: seatQuantity }
         );
         const numbers = seatNumber.data.booking_seats;
